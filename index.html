@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blockly Coding Game</title>
+	<style>
+		body {margin: 0px;overflow: hidden;background-color:#000;}
+		button{font-size:25px; padding:5px; cursor:pointer;margin:5px;}
+    	.turn{font-weight: bold;font-size:35px;}
+        #message{font-size: 20px; color:#FFF;margin:20px;}
+	</style>
+</head>
+<body>
+	<div id="message">Message Holder</div>
+    <!--table>
+        <tr><td colspan="2" style="text-align:center"><button class="moveForward">Move</button></td></tr>
+        <tr><td colspan="2" style="text-align:center"><button class="turn" data-dir="north">&uarr;</button></td></tr>
+        <tr>
+            <td><button class="turn" data-dir="west">&larr;</button></td>
+            <td><button class="turn" data-dir="east">&rarr;</button></td>
+        </tr>
+        <tr><td colspan="2" style="text-align:center"><button class="turn" data-dir="south">&darr;</button></td></tr>
+        <tr><td colspan="2" style="text-align:center"><button class="finish">FINISH</button></td></tr>
+    </table-->
+    <table>
+        <tr><td colspan="2" style="text-align:center"><button class="game-action" data-type="MOVE">Move</button></td></tr>
+        <tr><td colspan="2" style="text-align:center"><button class="game-action" data-type="NORTH">&uarr;</button></td></tr>
+        <tr>
+            <td><button class="game-action" data-type="WEST">&larr;</button></td>
+            <td><button class="game-action" data-type="EAST">&rarr;</button></td>
+        </tr>
+        <tr><td colspan="2" style="text-align:center"><button class="game-action" data-type="SOUTH">&darr;</button></td></tr>
+        <tr><td colspan="2" style="text-align:center"><button class="game-action" data-type="FINISH">FINISH</button></td></tr>
+        <tr><td colspan="2" style="text-align:center"><button class="game-action" data-type="START">START</button></td></tr>
+    </table>
+	<!-- Load all of our scripts -->
+	<script src="script_loader.js"></script>
+</body>
+</html>
