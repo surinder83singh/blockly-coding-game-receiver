@@ -46,9 +46,7 @@ var initialize = function() {
 
 	var $body = $(document.body);
     $body.on("game-state-changed", function(e, d){
-    	var data = gameManager.getGameData();
-    	data.__gameState = d.running;
-    	console.log("game-state-changed: data", data, d)
+    	console.log("game-state-changed: e, data", e, d)
     	gameManager.sendGameMessageToAllConnectedPlayers(d);
     });
 
