@@ -49,7 +49,7 @@ var initialize = function() {
     	var data = gameManager.getGameData();
     	data.__gameState = d.running;
     	console.log("game-state-changed: data", data, d)
-    	gameManager.updateGameData(data);
+    	gameManager.sendGameMessageToAllConnectedPlayers(d);
     });
 
 	//testing UI
